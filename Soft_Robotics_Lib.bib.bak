@@ -1,0 +1,265 @@
+% Encoding: UTF-8
+
+@InProceedings{Schorr2018,
+  author    = {Philipp Schorr and Valter Bohm and Klaus Zimmermann and Lena Zentner},
+  booktitle = {2018 International Conference on Reconfigurable Mechanisms and Robots ({ReMAR})},
+  title     = {An Approach to the Estimation of the Actuation Parameters for Mobile Tensegrity Robots with Tilting Movement Sequences},
+  year      = {2018},
+  month     = {jun},
+  publisher = {{IEEE}},
+  doi       = {10.1109/remar.2018.8449871},
+  groups    = {Paper List},
+}
+
+@Article{Volkova2017,
+  author    = {T.I. Volkova and V. Böhm and V.A. Naletova and T. Kaufhold and F. Becker and I. Zeidis and K. Zimmermann},
+  journal   = {Journal of Magnetism and Magnetic Materials},
+  title     = {A ferrofluid based artificial tactile sensor with magnetic field control},
+  year      = {2017},
+  month     = {jun},
+  pages     = {277--280},
+  volume    = {431},
+  doi       = {10.1016/j.jmmm.2016.09.105},
+  groups    = {Paper List},
+  publisher = {Elsevier {BV}},
+}
+
+@Article{Alici2018,
+  author    = {Gursel Alici and Taylor Canty and Rahim Mutlu and Weiping Hu and Vitor Sencadas},
+  journal   = {Soft Robotics},
+  title     = {Modeling and Experimental Evaluation of Bending Behavior of Soft Pneumatic Actuators Made of Discrete Actuation Chambers},
+  year      = {2018},
+  month     = {feb},
+  number    = {1},
+  pages     = {24--35},
+  volume    = {5},
+  doi       = {10.1089/soro.2016.0052},
+  groups    = {Paper List},
+  publisher = {Mary Ann Liebert Inc},
+}
+
+@Article{Manns2018,
+  author    = {Martin Manns and Jorge Morales and Peter Frohn},
+  journal   = {Procedia {CIRP}},
+  title     = {Additive manufacturing of silicon based {PneuNets} as soft robotic actuators},
+  year      = {2018},
+  pages     = {328--333},
+  volume    = {72},
+  doi       = {10.1016/j.procir.2018.03.186},
+  groups    = {Paper List},
+  publisher = {Elsevier {BV}},
+}
+
+@InProceedings{Henke2012,
+  author    = {Markus Henke and Jörg Sorber and Gerald Gerlach},
+  booktitle = {Electroactive Polymer Actuators and Devices ({EAPAD}) 2012},
+  title     = {Multi-layer beam with variable stiffness based on electroactive polymers},
+  year      = {2012},
+  editor    = {Yoseph Bar-Cohen},
+  month     = {apr},
+  publisher = {{SPIE}},
+  doi       = {10.1117/12.915138},
+  groups    = {Paper List},
+}
+
+@Article{Behn2019,
+  author    = {Carsten Behn and Konrad Siedler},
+  journal   = {Applied Mathematical Modelling},
+  title     = {Adaptive {PID}-tracking control of muscle-like actuated compliant robotic systems with input constraints},
+  year      = {2019},
+  month     = {mar},
+  pages     = {9--21},
+  volume    = {67},
+  doi       = {10.1016/j.apm.2018.10.012},
+  groups    = {Paper List},
+  publisher = {Elsevier {BV}},
+}
+
+@Article{Campbell2018,
+  author    = {Sarah Campbell},
+  journal   = {{IEEE} Pulse},
+  title     = {The Robotics Revolution Will Be Soft: Soft Robotics Proliferate-Along with Their Sources of Inspiration},
+  year      = {2018},
+  month     = {may},
+  number    = {3},
+  pages     = {19--24},
+  volume    = {9},
+  doi       = {10.1109/mpul.2018.2814240},
+  groups    = {Recommendations / Others},
+  publisher = {Institute of Electrical and Electronics Engineers ({IEEE})},
+}
+
+@Book{Verl2015,
+  editor    = {Alexander Verl and Alin Albu-Schäffer and Oliver Brock and Annika Raatz},
+  publisher = {Springer Berlin Heidelberg},
+  title     = {Soft Robotics},
+  year      = {2015},
+  doi       = {10.1007/978-3-662-44506-8},
+  groups    = {Recommendations / Others},
+}
+
+@TechReport{,
+  author      = {J Steigenberger},
+  institution = {Technische Universität Ilmenau},
+  title       = {A continuum model of passive vibrissae},
+  year        = {2013},
+  type        = {Preprint M13/03},
+  groups      = {Paper List},
+  url         = {https://www.db-thueringen.de/receive/dbt_mods_00021789},
+}
+
+@TechReport{,
+  author      = {B Belzile},
+  institution = {École de Technologie Supérieure},
+  title       = {Stiffness analysis of prestressed underactuated fingers for proprioceptive tactile sensing},
+  year        = {2020},
+  type        = {Pre-print},
+  groups      = {Paper List},
+  url         = {https://www.researchgate.net/publication/344734941_Stiffness_analysis_of_prestressed_underactuated_fingers_for_proprioceptive_tactile_sensing},
+}
+
+@Article{Schmitt2018,
+  author    = {Fran{\c{c}}ois Schmitt and Olivier Piccin and Laurent Barb{\'{e}} and Bernard Bayle},
+  journal   = {Frontiers in Robotics and {AI}},
+  title     = {Soft Robots Manufacturing: A Review},
+  year      = {2018},
+  month     = {jul},
+  volume    = {5},
+  doi       = {10.3389/frobt.2018.00084},
+  groups    = {2. Overview and basics},
+  publisher = {Frontiers Media {SA}},
+}
+
+@Article{Whitesides2018,
+  author    = {George M. Whitesides},
+  journal   = {Angewandte Chemie International Edition},
+  title     = {Soft Robotics},
+  year      = {2018},
+  month     = {mar},
+  number    = {16},
+  pages     = {4258--4273},
+  volume    = {57},
+  doi       = {10.1002/anie.201800907},
+  groups    = {1. 2. Overview and basics, 2. Overview and basics},
+  publisher = {Wiley},
+}
+
+@Article{Trimmer2013,
+  author    = {Barry Trimmer},
+  journal   = {Current Biology},
+  title     = {Soft robots},
+  year      = {2013},
+  month     = {aug},
+  number    = {15},
+  pages     = {R639--R641},
+  volume    = {23},
+  doi       = {10.1016/j.cub.2013.04.070},
+  groups    = {1. Introduction},
+  publisher = {Elsevier {BV}},
+}
+
+@Article{Trimmer2014,
+  author    = {Barry Trimmer},
+  journal   = {Soft Robotics},
+  title     = {A Journal of Soft Robotics: Why Now?},
+  year      = {2014},
+  month     = {mar},
+  number    = {1},
+  pages     = {1--4},
+  volume    = {1},
+  doi       = {10.1089/soro.2013.0003},
+  groups    = {1. Introduction},
+  publisher = {Mary Ann Liebert Inc},
+}
+
+@InProceedings{Chen2017,
+  author    = {Ang Chen and Ruixue Yin and Lin Cao and Chenwang Yuan and H.K. Ding and W.J. Zhang},
+  booktitle = {2017 24th International Conference on Mechatronics and Machine Vision in Practice (M2VIP)},
+  title     = {Soft robotics: Definition and research issues},
+  year      = {2017},
+  month     = {nov},
+  publisher = {{IEEE}},
+  doi       = {10.1109/m2vip.2017.8267170},
+  groups    = {1. Introduction},
+}
+
+@Electronic{,
+  author = {IGUS - Preston Souza},
+  month  = aug,
+  title  = {Soft Robotics - "soft robots"},
+  url    = {https://www.igus.com/info/robotics-soft-robotics-com},
+  year   = {2021},
+  groups = {1. Introduction},
+}
+
+@Electronic{,
+  author = {Wikipedia},
+  month  = aug,
+  title  = {Soft robotics},
+  url    = {https://en.wikipedia.org/wiki/Soft_robotics},
+  year   = {2021},
+  groups = {1. Introduction},
+}
+
+@Electronic{,
+  author = {W Sire and G {Velvé Casquillas}},
+  month  = aug,
+  title  = {Soft Robot: A Review},
+  url    = {https://www.elveflow.com/microfluidic-reviews/general-microfluidics/soft-robot/},
+  year   = {2021},
+  groups = {1. Introduction},
+}
+
+@Electronic{,
+  author = {Harvard Biodesign Lab},
+  month  = aug,
+  title  = {Soft Robotics},
+  url    = {https://biodesign.seas.harvard.edu/soft-robotics},
+  year   = {2021},
+  groups = {2. Overview and basics},
+}
+
+@Electronic{,
+  author = {DFG},
+  month  = aug,
+  title  = {PRIORITY PROGRAMME - SOFT MATERIAL ROBOTIC SYSTEMS (SMRS)},
+  url    = {https://www.spp2100.de/},
+  year   = {2021},
+  groups = {2. Overview and basics},
+}
+
+@Electronic{,
+  author = {{TU Berlin}},
+  month  = aug,
+  title  = {Robotics and Biology Laboratory},
+  url    = {https://www.robotics.tu-berlin.de/menue/home/},
+  year   = {2021},
+  groups = {2. Overview and basics},
+}
+
+@Electronic{,
+  author = {Soft Robotics Toolkit},
+  month  = aug,
+  title  = {Soft Robotics Toolkit},
+  url    = {https://softroboticstoolkit.com/},
+  year   = {2021},
+  groups = {2. Overview and basics},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}
+
+@Comment{jabref-meta: grouping:
+0 AllEntriesGroup:;
+1 StaticGroup:Paper List\;0\;1\;0xff0000ff\;bookshelf\;Papers that are discussed in the course\;;
+1 StaticGroup:Recommendations / Others\;0\;1\;0x00ff00ff\;magnify\;Futher literature to review\;;
+1 StaticGroup:1. Introduction\;0\;1\;0xff00ffff\;\;\;;
+1 StaticGroup:2. Overview and basics\;0\;1\;0xff00ffff\;\;\;;
+1 StaticGroup:3. Biomimetic in soft robotics\;0\;1\;0xff00ffff\;\;\;;
+1 StaticGroup:4. Tensegrities\;0\;1\;0xff00ffff\;\;\;;
+1 StaticGroup:5. Smart materials I\;0\;1\;0xff00ffff\;\;\;;
+1 StaticGroup:6. Soft gripping I\;0\;1\;0xff00ffff\;\;\;;
+1 StaticGroup:7. Soft gripping II\;0\;1\;0xff00ffff\;\;\;;
+1 StaticGroup:Smart materials II\;0\;1\;0xff00ffff\;\;\;;
+1 StaticGroup:Control strategies I\;0\;1\;0xff00ffff\;\;\;;
+1 StaticGroup:Control strategies II\;0\;1\;0xff00ffff\;\;\;;
+}
