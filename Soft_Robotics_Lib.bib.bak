@@ -104,7 +104,7 @@
   title       = {A continuum model of passive vibrissae},
   year        = {2013},
   type        = {Preprint M13/03},
-  groups      = {Paper List},
+  groups      = {Paper List, 3. Biomimetic in soft robotics},
   url         = {https://www.db-thueringen.de/receive/dbt_mods_00021789},
 }
 
@@ -246,6 +246,57 @@
   groups = {2. Overview and basics},
 }
 
+@Article{Majidi2018,
+  author    = {Carmel Majidi},
+  journal   = {Advanced Materials Technologies},
+  title     = {Soft-Matter Engineering for Soft Robotics},
+  year      = {2018},
+  month     = {dec},
+  pages     = {1800477},
+  doi       = {10.1002/admt.201800477},
+  groups    = {2. Overview and basics, 3. Biomimetic in soft robotics},
+  publisher = {Wiley},
+}
+
+@Article{Hartmann2018,
+  author    = {Florian Hartmann and Michael Drack and Martin Kaltenbrunner},
+  journal   = {Science Robotics},
+  title     = {Meant to merge: Fabrication of stretchy electronics for robotics},
+  year      = {2018},
+  month     = {may},
+  number    = {18},
+  pages     = {eaat9091},
+  volume    = {3},
+  doi       = {10.1126/scirobotics.aat9091},
+  groups    = {2. Overview and basics, 3. Biomimetic in soft robotics},
+  publisher = {American Association for the Advancement of Science ({AAAS})},
+}
+
+@Article{Horejs2020,
+  author    = {Christine Horejs},
+  journal   = {Nature Reviews Materials},
+  title     = {Speedy soft robots},
+  year      = {2020},
+  month     = {sep},
+  number    = {11},
+  pages     = {785--785},
+  volume    = {5},
+  doi       = {10.1038/s41578-020-00253-0},
+  groups    = {2. Overview and basics, 3. Biomimetic in soft robotics},
+  publisher = {Springer Science and Business Media {LLC}},
+}
+
+@Article{Nguyen2021,
+  author    = {Nhan Huu Nguyen and Van Anh Ho},
+  journal   = {Soft Robotics},
+  title     = {Mechanics and Morphological Compensation Strategy for Trimmed Soft Whisker Sensor},
+  year      = {2021},
+  month     = {jan},
+  doi       = {10.1089/soro.2020.0056},
+  groups    = {3. Biomimetic in soft robotics},
+  publisher = {Mary Ann Liebert Inc},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
 
 @Comment{jabref-meta: grouping:
@@ -254,7 +305,7 @@
 1 StaticGroup:Recommendations / Others\;0\;1\;0x00ff00ff\;magnify\;Futher literature to review\;;
 1 StaticGroup:1. Introduction\;0\;1\;0xff00ffff\;\;\;;
 1 StaticGroup:2. Overview and basics\;0\;1\;0xff00ffff\;\;\;;
-1 StaticGroup:3. Biomimetic in soft robotics\;0\;1\;0xff00ffff\;\;\;;
+1 StaticGroup:3. Biomimetic in soft robotics\;0\;0\;0xff00ffff\;\;\;;
 1 StaticGroup:4. Tensegrities\;0\;1\;0xff00ffff\;\;\;;
 1 StaticGroup:5. Smart materials I\;0\;1\;0xff00ffff\;\;\;;
 1 StaticGroup:6. Soft gripping I\;0\;1\;0xff00ffff\;\;\;;

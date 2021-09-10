@@ -1,0 +1,34 @@
+Python Source Code
+==================
+
+Introduction:
+-------------
+.. automodule:: demonstration
+   :members:
+
+.. raw:: html
+   :file: Template.html
+
+Overview and biomimetic in soft robotics:
+-----------------------------------------
+
+Tensegrity:
+-----------
+
+Smart materials I:
+------------------
+
+Soft gripping I:
+----------------
+
+Soft gripping II:
+-----------------
+
+Smart materials II:
+-------------------
+
+Control strategies I:
+---------------------
+
+Control strategies II:
+----------------------
