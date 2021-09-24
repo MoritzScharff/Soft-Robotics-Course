@@ -268,7 +268,7 @@
   pages     = {eaat9091},
   volume    = {3},
   doi       = {10.1126/scirobotics.aat9091},
-  groups    = {2. Overview and basics, 3. Biomimetic in soft robotics},
+  groups    = {2. Overview and basics, 3. Biomimetic in soft robotics, 8. Smart materials II, 1. Topic},
   publisher = {American Association for the Advancement of Science ({AAAS})},
 }
 
@@ -335,7 +335,7 @@
   pages     = {1700237},
   volume    = {3},
   doi       = {10.1002/admt.201700237},
-  groups    = {Smart materials II},
+  groups    = {8. Smart materials II},
   publisher = {Wiley},
 }
 
@@ -349,7 +349,7 @@
   pages     = {389--398},
   volume    = {6},
   doi       = {10.1089/soro.2018.0055},
-  groups    = {Smart materials II},
+  groups    = {8. Smart materials II},
   publisher = {Mary Ann Liebert Inc},
 }
 
@@ -362,7 +362,7 @@
   pages     = {14816--14844},
   volume    = {7},
   doi       = {10.1039/c9tc05392a},
-  groups    = {Smart materials II, 2. Overview and basics},
+  groups    = {2. Overview and basics, 8. Smart materials II},
   publisher = {Royal Society of Chemistry ({RSC})},
 }
 
@@ -399,7 +399,7 @@
   month     = {nov},
   volume    = {3},
   doi       = {10.3389/frobt.2016.00069},
-  groups    = {6. Soft gripping I, 7. Soft gripping II, Control strategies II},
+  groups    = {6. Soft gripping I, 7. Soft gripping II, 10. Control strategies II, 3. Topic},
   publisher = {Frontiers Media {SA}},
 }
 
@@ -430,6 +430,240 @@
   publisher = {Royal Society of Chemistry ({RSC})},
 }
 
+@Article{Garrad2019,
+  author    = {M. Garrad and G. Soter and A. T. Conn and H. Hauser and J. Rossiter},
+  journal   = {Science Robotics},
+  title     = {A soft matter computer for soft robots},
+  year      = {2019},
+  month     = {aug},
+  number    = {33},
+  pages     = {eaaw6060},
+  volume    = {4},
+  doi       = {10.1126/scirobotics.aaw6060},
+  groups    = {8. Smart materials II},
+  publisher = {American Association for the Advancement of Science ({AAAS})},
+}
+
+@Article{Coyle2018,
+  author    = {Stephen Coyle and Carmel Majidi and Philip LeDuc and K. Jimmy Hsia},
+  journal   = {Extreme Mechanics Letters},
+  title     = {Bio-inspired soft robotics: Material selection, actuation, and design},
+  year      = {2018},
+  month     = {jul},
+  pages     = {51--59},
+  volume    = {22},
+  doi       = {10.1016/j.eml.2018.05.003},
+  groups    = {2. Overview and basics},
+  publisher = {Elsevier {BV}},
+}
+
+@Article{Witte2017,
+  author    = {Hartmut~ Witte},
+  journal   = {International Journal of Biosensors {\&} Bioelectronics},
+  title     = {The Concept of Biomechatronic Systems as a Means to Support the Development of Biosensors},
+  year      = {2017},
+  month     = {apr},
+  number    = {4},
+  volume    = {2},
+  doi       = {10.15406/ijbsbe.2017.02.00030},
+  groups    = {3. Biomimetic in soft robotics},
+  publisher = {{MedCrave} Group, {LLC}},
+}
+
+@Standard{,
+  institution  = {Verein Deutscher Ingenieure (VDI)},
+  organization = {VDI-Gesellschaft Technologies of Life Sciences},
+  title        = {Biomimetics - Biomimetic robots},
+  author       = {{VDI-Fachbereich Bionik}},
+  month        = nov,
+  number       = {6222},
+  type         = {VDI Guideline},
+  url          = {https://www.vdi.de/richtlinien/details/vdi-6222-blatt-1-bionik-bionische-roboter},
+  year         = {2013},
+  groups       = {3. Biomimetic in soft robotics},
+}
+
+@Article{Belli2017,
+  author    = {Hayley M. Belli and Anne E. T. Yang and Chris S. Bresee and Mitra J. Z. Hartmann},
+  journal   = {Journal of Neurophysiology},
+  title     = {Variations in vibrissal geometry across the rat mystacial pad: base diameter, medulla, and taper},
+  year      = {2017},
+  month     = {apr},
+  number    = {4},
+  pages     = {1807--1820},
+  volume    = {117},
+  doi       = {10.1152/jn.00054.2016},
+  groups    = {3. Biomimetic in soft robotics},
+  publisher = {American Physiological Society},
+}
+
+@InCollection{Lepora2018,
+  author    = {Nathan F. Lepora and Niels Burnus and Yilin Tao and Luke Cramphorn},
+  booktitle = {Biomimetic and Biohybrid Systems},
+  publisher = {Springer International Publishing},
+  title     = {Active Touch with a Biomimetic 3D-Printed Whiskered Robot},
+  year      = {2018},
+  pages     = {263--275},
+  doi       = {10.1007/978-3-319-95972-6_28},
+  groups    = {3. Biomimetic in soft robotics},
+}
+
+@Article{Corzo2020,
+  author    = {Daniel Corzo and Guillermo Tostado-Bl{\'{a}}zquez and Derya Baran},
+  journal   = {Frontiers in Electronics},
+  title     = {Flexible Electronics: Status, Challenges and Opportunities},
+  year      = {2020},
+  month     = {sep},
+  volume    = {1},
+  doi       = {10.3389/felec.2020.594003},
+  groups    = {1. Topic, 8. Smart materials II},
+  publisher = {Frontiers Media {SA}},
+}
+
+@InProceedings{Agar2010,
+  author    = {Joshua. C. Agar and Katy J. Lin and Rongwei Zhang and Jessica Durden and Kyoung-Sik Moon and C. P. Wong},
+  booktitle = {2010 Proceedings 60th Electronic Components and Technology Conference ({ECTC})},
+  title     = {Novel {PDMS}(silicone)-in-{PDMS}(silicone): Low cost flexible electronics without metallization},
+  year      = {2010},
+  publisher = {{IEEE}},
+  doi       = {10.1109/ectc.2010.5490654},
+  groups    = {1. Topic, 8. Smart materials II},
+}
+
+@Article{Zhou2019,
+  author    = {Lu-yu Zhou and Jian-zhong Fu and Qing Gao and Peng Zhao and Yong He},
+  journal   = {Advanced Functional Materials},
+  title     = {All-Printed Flexible and Stretchable Electronics with Pressing or Freezing Activatable Liquid-Metal{\textendash}Silicone Inks},
+  year      = {2019},
+  month     = {oct},
+  number    = {3},
+  pages     = {1906683},
+  volume    = {30},
+  doi       = {10.1002/adfm.201906683},
+  groups    = {1. Topic, 8. Smart materials II},
+  publisher = {Wiley},
+}
+
+@Book{Wong2009,
+  editor    = {William S. Wong and Alberto Salleo},
+  publisher = {Springer {US}},
+  title     = {Flexible Electronics},
+  year      = {2009},
+  doi       = {10.1007/978-0-387-74363-9},
+  groups    = {1. Topic},
+}
+
+@InProceedings{Henry2010,
+  author    = {Christopher P. Henry and William Carter and Guillermo A. Herrera and Geoffrey P. McKnight and Alan L. Browne and Nancy L. Johnson and Imad F. Bazzi},
+  booktitle = {Industrial and Commercial Applications of Smart Structures Technologies 2010},
+  title     = {Active material based active sealing technology: Part 1. Active seal requirements vs. active material actuator properties},
+  year      = {2010},
+  editor    = {M. Brett McMickell and Kevin M. Farinholt},
+  month     = {mar},
+  publisher = {{SPIE}},
+  doi       = {10.1117/12.843834},
+  groups    = {1. Topic, 8. Smart materials II, 6. Topic},
+}
+
+@TechReport{,
+  author      = {C Henry and W Carter and G Herrera and G McKnight and A Browne and N Johnson and I Bazzi},
+  institution = {International Workshop: SMART MATERIALS AND STRUCTURES},
+  title       = {Active Material Based Active Sealing Technology Part 2: Dielectric Elastomer and SMA Approaches},
+  year        = {2009},
+  groups      = {6. Topic},
+}
+
+@Book{Jalon1994,
+  author    = {Javier Garc{\'{\i}}a de Jal{\'{o}}n and Eduardo Bayo},
+  publisher = {Springer New York},
+  title     = {Kinematic and Dynamic Simulation of Multibody Systems},
+  year      = {1994},
+  doi       = {10.1007/978-1-4612-2600-0},
+  groups    = {10. Control strategies II},
+}
+
+@Article{Ren2021,
+  author    = {Luquan Ren and Bingqian Li and Guowu Wei and Kunyang Wang and Zhengyi Song and Yuyang Wei and Lei Ren and Qingping Liu},
+  journal   = {{iScience}},
+  title     = {Biology and bioinspiration of soft robotics: Actuation, sensing, and system integration},
+  year      = {2021},
+  month     = {sep},
+  number    = {9},
+  pages     = {103075},
+  volume    = {24},
+  doi       = {10.1016/j.isci.2021.103075},
+  groups    = {3. Biomimetic in soft robotics},
+  publisher = {Elsevier {BV}},
+}
+
+@InProceedings{Sponga,
+  author    = {M.W. Spong},
+  booktitle = {Proceedings of {IEEE}/{RSJ} International Conference on Intelligent Robots and Systems ({IROS}{\textquotesingle}94)},
+  title     = {Partial feedback linearization of underactuated mechanical systems},
+  year      = {1994},
+  publisher = {{IEEE}},
+  doi       = {10.1109/iros.1994.407375},
+  groups    = {10. Control strategies II},
+}
+
+@Book{Paggi2020,
+  editor    = {Marco Paggi and David Hills},
+  publisher = {Springer International Publishing},
+  title     = {Modeling and Simulation of Tribological Problems in Technology},
+  year      = {2020},
+  doi       = {10.1007/978-3-030-20377-1},
+  groups    = {2. Topic},
+}
+
+@Book{Behn2009,
+  author    = {Carsten Behn and Igor Zeidis and Klaus Zimmermann},
+  publisher = {Springer Berlin Heidelberg},
+  title     = {Mechanics of Terrestrial Locomotion},
+  year      = {2009},
+  doi       = {10.1007/978-3-540-88841-3},
+  groups    = {2. Topic},
+}
+
+@InProceedings{,
+  author    = {L Stubbig and R Lichtenheldt and F Becker and K Zimmermann},
+  booktitle = {Ilmenau Scientific Colloquium},
+  title     = {Model-based development of a compliant locomotion system for a small scout rover},
+  year      = {2017},
+  groups    = {2. Topic},
+  url       = {https://www.db-thueringen.de/receive/dbt_mods_00033220},
+}
+
+@InCollection{Bhushana,
+  author    = {Bharat Bhushan},
+  booktitle = {Nanotribology and Nanomechanics},
+  publisher = {Springer Berlin Heidelberg},
+  title     = {Gecko Feet: Natural Hairy Attachment Systems for Smart Adhesion {\textendash} Mechanism, Modeling and Development of Bio-Inspired Materials},
+  pages     = {1073--1134},
+  doi       = {10.1007/978-3-540-77608-6_20},
+  groups    = {4. Topic},
+}
+
+@InCollection{Thomson2018,
+  author    = {Gordon Thomson and Daniil Yurchenko and Dimitri V. Val},
+  booktitle = {Energy Harvesting},
+  publisher = {{InTech}},
+  title     = {Dielectric Elastomers for Energy Harvesting},
+  year      = {2018},
+  month     = {jun},
+  doi       = {10.5772/intechopen.74136},
+  groups    = {5. Topic},
+}
+
+@Book{Meirovitch2001,
+  author    = {Meirovitch, Leonard},
+  publisher = {McGraw-Hill},
+  title     = {Fundamentals of vibrations},
+  year      = {2001},
+  address   = {Boston},
+  isbn      = {0070413452},
+  groups    = {5. Topic},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
 
 @Comment{jabref-meta: grouping:
@@ -443,7 +677,14 @@
 1 StaticGroup:5. Smart materials I\;0\;1\;0xff00ffff\;\;\;;
 1 StaticGroup:6. Soft gripping I\;0\;1\;0xff00ffff\;\;\;;
 1 StaticGroup:7. Soft gripping II\;0\;1\;0xff00ffff\;\;\;;
-1 StaticGroup:Smart materials II\;0\;1\;0xff00ffff\;\;\;;
-1 StaticGroup:Control strategies I\;0\;1\;0xff00ffff\;\;\;;
-1 StaticGroup:Control strategies II\;0\;1\;0xff00ffff\;\;\;;
+1 StaticGroup:8. Smart materials II\;0\;1\;0xff00ffff\;\;\;;
+1 StaticGroup:9. Control strategies I\;0\;1\;0xff00ffff\;\;\;;
+1 StaticGroup:10. Control strategies II\;0\;1\;0xff00ffff\;\;\;;
+1 StaticGroup:Presentation of Topics\;0\;1\;0x808000ff\;book_plus_multiple_outline\;\;;
+2 StaticGroup:1. Topic\;0\;1\;0x808000ff\;\;Comprehensive review on flexible electronics\;;
+2 StaticGroup:2. Topic\;0\;1\;0x808000ff\;\;An analytical model for anisotropic, frictional contact between object and whisker\;;
+2 StaticGroup:3. Topic\;0\;1\;0x808000ff\;\;Design study of a soft gripper to pick fruit, e.g., grapes under different environmental conditions\;;
+2 StaticGroup:4. Topic\;0\;1\;0x808000ff\;\;A gecko-like robot for inspection and cleaning of poorly accessible glass surfaces\;;
+2 StaticGroup:5. Topic\;0\;1\;0x808000ff\;\;Pilot study on energy harvesting using dielectric elastomers in vibrating machines, e.g., washing machine\;;
+2 StaticGroup:6. Topic\;0\;1\;0x808000ff\;\;A smart, soft sealing for pipelines\;;
 }
