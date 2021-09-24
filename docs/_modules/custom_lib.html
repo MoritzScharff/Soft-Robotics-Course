@@ -1,0 +1,331 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>custom_lib &mdash; Soft Robotics Course 0.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Soft Robotics Course
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Python%20Source%20Code.html">Python Source Code</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Soft Robotics Course</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="index.html">Module code</a> &raquo;</li>
+        
+      <li>custom_lib</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Source code for custom_lib</h1><div class="highlight"><pre>
+<span></span><span class="sd">&quot;&quot;&quot;This module contains all functions regarding Steigenberger [2012] Eval.&quot;&quot;&quot;</span>
+
+<span class="c1"># import section</span>
+
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">scipy</span> <span class="k">as</span> <span class="nn">sci</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">from</span> <span class="nn">scipy.integrate</span> <span class="kn">import</span> <span class="n">odeint</span>
+<span class="kn">from</span> <span class="nn">scipy.optimize</span> <span class="kn">import</span> <span class="n">fsolve</span>
+
+<div class="viewcode-block" id="v_lin"><a class="viewcode-back" href="../Python%20Source%20Code.html#custom_lib.v_lin">[docs]</a><span class="k">def</span> <span class="nf">v_lin</span><span class="p">(</span><span class="n">L</span><span class="p">,</span> <span class="n">d</span><span class="p">,</span> <span class="n">E</span><span class="p">,</span> <span class="n">F</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Use this function to calculate the elastica of a whisker under tip load considering linear deformation behavior.</span>
+
+<span class="sd">       :param L: Length of the whisker [m]</span>
+<span class="sd">       :type L: float</span>
+<span class="sd">       :param d: diameter of the whisker [m]</span>
+<span class="sd">       :type d: float</span>
+<span class="sd">       :param E: Young&#39;s modulus [N/m**2]</span>
+<span class="sd">       :type E: float</span>
+<span class="sd">       :param F: Force/load [N]</span>
+
+<span class="sd">       :retrun: elastica [m]</span>
+<span class="sd">       :rtype: numpy arrays for x- and y-coordinates</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="n">Iz</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">/</span><span class="mi">64</span> <span class="o">*</span> <span class="n">d</span><span class="o">**</span><span class="mi">4</span> <span class="c1"># Second moment of area [m**4]</span>
+
+    <span class="n">x_vals</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">L</span><span class="p">,</span><span class="mi">100</span><span class="p">)</span>
+
+    <span class="n">y_vals</span> <span class="o">=</span> <span class="n">x_vals</span><span class="o">*</span><span class="p">(</span><span class="o">-</span><span class="n">F</span><span class="o">*</span><span class="n">L</span><span class="o">*</span><span class="n">x_vals</span><span class="o">/</span><span class="mi">2</span> <span class="o">+</span> <span class="n">F</span><span class="o">*</span><span class="n">x_vals</span><span class="o">**</span><span class="mi">2</span><span class="o">/</span><span class="mi">6</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">E</span><span class="o">*</span><span class="n">Iz</span><span class="p">)</span>
+
+    <span class="n">elastica</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">empty</span><span class="p">((</span><span class="mi">100</span><span class="p">,</span><span class="mi">2</span><span class="p">))</span>
+    <span class="n">elastica</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">x_vals</span>
+    <span class="n">elastica</span><span class="p">[:,</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">y_vals</span>
+
+    <span class="k">return</span> <span class="n">elastica</span></div>
+
+<div class="viewcode-block" id="v_nonlin"><a class="viewcode-back" href="../Python%20Source%20Code.html#custom_lib.v_nonlin">[docs]</a><span class="k">def</span> <span class="nf">v_nonlin</span><span class="p">(</span><span class="n">L</span><span class="p">,</span> <span class="n">d</span><span class="p">,</span> <span class="n">E</span><span class="p">,</span> <span class="n">F</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Use this function to calculate the elastica of a whisker under tip load considering nonlinear deformation behavior.</span>
+
+<span class="sd">       :param L: Length of the whisker [m]</span>
+<span class="sd">       :type L: float</span>
+<span class="sd">       :param d: diameter of the whisker [m]</span>
+<span class="sd">       :type d: float</span>
+<span class="sd">       :param E: Young&#39;s modulus [N/m**2]</span>
+<span class="sd">       :type E: float</span>
+<span class="sd">       :param F: Force/load [N]</span>
+
+<span class="sd">       :retrun: elastica [m]</span>
+<span class="sd">       :rtype: numpy arrays for x- and y-coordinates</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="c1"># Integration Errors</span>
+    <span class="n">abserr</span> <span class="o">=</span> <span class="mf">1.0e-12</span>
+    <span class="n">relerr</span> <span class="o">=</span> <span class="mf">1.0e-10</span>
+
+    <span class="c1"># Optimization Error</span>
+    <span class="n">tol</span><span class="o">=</span><span class="mf">1.0e-8</span>
+
+    <span class="n">Iz</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">/</span><span class="mi">64</span> <span class="o">*</span> <span class="n">d</span><span class="o">**</span><span class="mi">4</span> <span class="c1"># Second moment of area [m**4]</span>
+
+    <span class="n">p</span> <span class="o">=</span> <span class="n">L</span><span class="p">,</span> <span class="n">d</span><span class="p">,</span> <span class="n">E</span><span class="p">,</span> <span class="n">F</span><span class="p">,</span> <span class="n">Iz</span> <span class="c1"># build parameter vector</span>
+    <span class="n">s</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">L</span><span class="p">,</span><span class="mi">100</span><span class="p">)</span> <span class="c1"># arclength vector</span>
+    <span class="n">BC</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span> <span class="c1"># Boundary conditions x(0) = 0, y(0) = 0, phi(0) = 0</span>
+
+    <span class="n">sol</span> <span class="o">=</span> <span class="n">fsolve</span><span class="p">(</span><span class="n">ode_sol</span><span class="p">,</span> <span class="mf">0.7</span><span class="o">*</span><span class="n">L</span><span class="p">,</span> <span class="n">args</span><span class="o">=</span><span class="p">(</span><span class="n">p</span><span class="p">,</span> <span class="n">BC</span><span class="p">,</span> <span class="n">s</span><span class="p">,</span> <span class="n">abserr</span><span class="p">,</span> <span class="n">relerr</span><span class="p">),</span> <span class="n">xtol</span><span class="o">=</span><span class="n">tol</span><span class="p">)</span> <span class="c1"># Returns the roots of the (non-linear) equations</span>
+
+    <span class="n">elastica_nonlin</span> <span class="o">=</span> <span class="n">odeint</span><span class="p">(</span><span class="n">ode_sys</span><span class="p">,</span> <span class="n">BC</span><span class="p">,</span> <span class="n">s</span><span class="p">,</span> <span class="n">args</span><span class="o">=</span><span class="p">(</span><span class="n">p</span><span class="p">,</span> <span class="n">sol</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">:]),</span> <span class="n">atol</span><span class="o">=</span><span class="n">abserr</span><span class="p">,</span> <span class="n">rtol</span><span class="o">=</span><span class="n">relerr</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">elastica_nonlin</span></div>
+
+
+<div class="viewcode-block" id="ode_sol"><a class="viewcode-back" href="../Python%20Source%20Code.html#custom_lib.ode_sol">[docs]</a><span class="k">def</span> <span class="nf">ode_sol</span><span class="p">(</span><span class="n">opti_para</span><span class="p">,</span><span class="n">p</span><span class="p">,</span><span class="n">BC</span><span class="p">,</span><span class="n">s</span><span class="p">,</span><span class="n">abserr</span><span class="p">,</span><span class="n">relerr</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Apply the shooting method by using a root finding optimization algorithm.</span>
+
+<span class="sd">        :param opti_param: optimization parameter</span>
+<span class="sd">        :type opti_param: progam defined</span>
+<span class="sd">        :param p: set of constant belonging to the specific problem</span>
+<span class="sd">        :type p: tuple consiting of anything</span>
+<span class="sd">        :param BC: boundary conditions belonging to the specific problem</span>
+<span class="sd">        :type BC: tuple</span>
+<span class="sd">        :param s: arc lentgh</span>
+<span class="sd">        :type s: vector</span>
+<span class="sd">        :param abserr: absolute error for integration</span>
+<span class="sd">        :type abserr: float</span>
+<span class="sd">        :param relerr: relative error for integration</span>
+<span class="sd">        :type relerr: float</span>
+
+<span class="sd">        :return: optimization value / evaluated optimization criterion</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="c1"># unknown parameter</span>
+    <span class="n">xL</span> <span class="o">=</span> <span class="n">opti_para</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+
+    <span class="c1"># numeric integration</span>
+    <span class="n">elastica_nonlin</span> <span class="o">=</span> <span class="n">odeint</span><span class="p">(</span><span class="n">ode_sys</span><span class="p">,</span> <span class="n">BC</span><span class="p">,</span> <span class="n">s</span><span class="p">,</span> <span class="n">args</span><span class="o">=</span><span class="p">(</span><span class="n">p</span><span class="p">,</span> <span class="n">xL</span><span class="p">),</span> <span class="n">atol</span><span class="o">=</span><span class="n">abserr</span><span class="p">,</span> <span class="n">rtol</span><span class="o">=</span><span class="n">relerr</span><span class="p">)</span>
+
+    <span class="c1"># optimization criterion</span>
+    <span class="n">eq</span> <span class="o">=</span> <span class="n">elastica_nonlin</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">:,</span><span class="mi">0</span><span class="p">]</span><span class="o">-</span><span class="n">xL</span>
+
+    <span class="k">return</span> <span class="n">eq</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span></div>
+
+<div class="viewcode-block" id="ode_sys"><a class="viewcode-back" href="../Python%20Source%20Code.html#custom_lib.ode_sys">[docs]</a><span class="k">def</span> <span class="nf">ode_sys</span><span class="p">(</span><span class="n">BC</span><span class="p">,</span> <span class="n">s</span><span class="p">,</span> <span class="n">p</span><span class="p">,</span> <span class="n">xL</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Get the elastica of the whisker.</span>
+
+<span class="sd">        :param BC: boundary conditions belonging to the specific problem</span>
+<span class="sd">        :type BC: tuple</span>
+<span class="sd">        :param s: arc lentgh</span>
+<span class="sd">        :type s: vector</span>
+<span class="sd">        :param p: set of constant belonging to the specific problem</span>
+<span class="sd">        :type p: tuple consiting of anything</span>
+<span class="sd">        :param xL: unkown position of the tip of the whisker</span>
+<span class="sd">        :type xL: flot</span>
+
+<span class="sd">        :return: Defined ODE system</span>
+<span class="sd">        :rytpe: ODE set</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="n">L</span><span class="p">,</span> <span class="n">d</span><span class="p">,</span> <span class="n">E</span><span class="p">,</span> <span class="n">F</span><span class="p">,</span> <span class="n">Iz</span> <span class="o">=</span> <span class="n">p</span>
+    <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">phi</span> <span class="o">=</span> <span class="n">BC</span>
+
+    <span class="n">v</span> <span class="o">=</span> <span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">phi</span><span class="p">),</span>
+         <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">phi</span><span class="p">),</span>
+         <span class="n">F</span><span class="o">/</span><span class="p">(</span><span class="n">E</span><span class="o">*</span><span class="n">Iz</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="n">x</span><span class="o">-</span><span class="n">xL</span><span class="p">)]</span>
+
+    <span class="k">return</span> <span class="n">v</span></div>
+</pre></div>
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Moritz Scharff.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

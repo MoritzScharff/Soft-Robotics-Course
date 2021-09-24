@@ -12,6 +12,19 @@ Introduction:
 Overview and biomimetic in soft robotics:
 -----------------------------------------
 
+Theoretical model in a jupyter notebook
+***************************************
+
+.. raw:: html
+ :file: Steigenberger [2012].html
+
+Numeric evaluation in Python
+****************************
+
+.. automodule:: custom_lib
+  :members:
+
+
 Tensegrity:
 -----------
 
