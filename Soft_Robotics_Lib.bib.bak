@@ -335,7 +335,7 @@
   pages     = {1700237},
   volume    = {3},
   doi       = {10.1002/admt.201700237},
-  groups    = {8. Smart materials II},
+  groups    = {8. Smart materials II, 6. Topic},
   publisher = {Wiley},
 }
 
@@ -651,7 +651,7 @@
   year      = {2018},
   month     = {jun},
   doi       = {10.5772/intechopen.74136},
-  groups    = {5. Topic},
+  groups    = {5. Topic, 6. Topic},
 }
 
 @Book{Meirovitch2001,
@@ -662,6 +662,17 @@
   address   = {Boston},
   isbn      = {0070413452},
   groups    = {5. Topic},
+}
+
+@Book{Carpi2016,
+  author    = {Carpi, Federico},
+  publisher = {Springer Reference},
+  title     = {Electromechanically active polymers : a concise reference},
+  year      = {2016},
+  address   = {Cham, Switzerland},
+  isbn      = {9783319315300},
+  groups    = {8. Smart materials II},
+  url       = {https://link.springer.com/referencework/10.1007/978-3-319-31530-0#about},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}

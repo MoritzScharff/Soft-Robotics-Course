@@ -36,8 +36,8 @@ The following literature is reviewed and discussed in the present course.
      - 25.09.2021 – Presentation of topics
      -
    * - 4
-     - 02.10.2021 – Tensegrities
-     - `10.1109/REMAR.2018.8449871 <https://ieeexplore.ieee.org/document/8449871>`_
+     - 02.10.2021 – Smart materials II
+     - `10.1117/12.915138 <https://www.spiedigitallibrary.org/conference-proceedings-of-spie/8340/83401P/Multi-layer-beam-with-variable-stiffness-based-on-electroactive-polymers/10.1117/12.915138.short?SSO=1>`_
    * - 5
      - 09.10.2021 – Smart materials I
      - `10.1016/j.jmmm.2016.09.105 <https://www.sciencedirect.com/science/article/abs/pii/S0304885316323149>`_
@@ -48,8 +48,8 @@ The following literature is reviewed and discussed in the present course.
      - 26.10.2021 – Soft gripping II
      - `10.1016/j.procir.2018.03.186 <https://www.sciencedirect.com/science/article/pii/S2212827118303457>`_
    * - 8
-     - 30.10.2021 – Smart materials II
-     - `10.1117/12.915138 <https://www.spiedigitallibrary.org/conference-proceedings-of-spie/8340/83401P/Multi-layer-beam-with-variable-stiffness-based-on-electroactive-polymers/10.1117/12.915138.short?SSO=1>`_
+     - 30.10.2021 – Tensegrity
+     - `10.1109/REMAR.2018.8449871 <https://ieeexplore.ieee.org/document/8449871>`_
    * - 9
      - 106.11.2021 – Control strategies I
      - `10.1016/j.apm.2018.10.012  <https://www.sciencedirect.com/science/article/abs/pii/S0307904X18305031>`_
