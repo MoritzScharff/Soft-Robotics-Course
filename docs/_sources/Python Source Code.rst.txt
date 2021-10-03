@@ -40,6 +40,9 @@ Soft gripping II:
 Smart materials II:
 -------------------
 
+.. raw:: html
+ :file: Henke [2012].html
+
 Control strategies I:
 ---------------------
 
