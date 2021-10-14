@@ -30,6 +30,10 @@ Tensegrity:
 
 Smart materials I:
 ------------------
+.. raw:: html
+ :file: Volkova [2017].html
+
+
 
 Soft gripping I:
 ----------------
